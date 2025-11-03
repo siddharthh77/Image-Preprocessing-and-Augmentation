@@ -24,7 +24,7 @@ A full-stack web application to clean, standardize, and augment object detection
 
 ---
 
-## Local Development Setup (Without Docker)
+## Local Development Setup 
 
 Follow these steps to run the application on your local machine.
 
