@@ -56,3 +56,52 @@ pip install -r requirements.txt
 # 4. Run the FastAPI server
 # The --reload flag automatically restarts the server when you change code.
 uvicorn app.main:app --reload
+```
+### 1. Frontend Setup
+
+In a new terminal window, set up and run the React development server.
+
+```bash
+
+# 1. Navigate to the frontend directory
+cd frontend
+
+# 2. Install the required Node.js packages
+npm install
+
+# 3. Set up the environment file
+# This tells the frontend where to find the backend.
+# The project already includes a .env.local file for this.
+# Ensure it contains the following line:
+# VITE_API_URL=http://localhost:8000/api
+
+# 4. Run the React development server
+npm run dev
+```
+
+The frontend application will now be running at http://localhost:5173. Leave this terminal running as well.
+
+### 3. Usage
+
+With both servers running, open your web browser and navigate to http://localhost:5173 to use the application.
+
+### Project Structure
+
+A high-level overview of the project's folder structure.
+
+.
+├── backend/
+│   ├── app/
+│   │   ├── api.py           # FastAPI endpoints
+│   │   ├── main.py          # FastAPI app initialization
+│   │   └── logic/           # Core processing scripts
+│   │       ├── clean_dataset.py
+│   │       └── augment_dataset.py
+│   └── requirements.txt
+└── frontend/
+    ├── src/
+    │   ├── components/      # Reusable React components
+    │   ├── pages/           # Main page component (HomePage.tsx)
+    │   ├── App.tsx          # Main application layout
+    │   └── context/         # React context for state management
+    └── package.json
