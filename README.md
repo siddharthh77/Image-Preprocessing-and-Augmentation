@@ -32,6 +32,7 @@ Follow these steps to run the application on your local machine.
 
 *   **Python** (3.10 or newer) and `pip`.
 *   **Node.js** (v18 or newer) and `npm` (or `yarn`).
+*   Create a .env.local file and copy all contents from env.example into it.
 
 ### 1. Backend Setup
 
