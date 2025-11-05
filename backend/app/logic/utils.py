@@ -17,6 +17,6 @@ def validate_dataset_structure(filenames: list[str]) -> tuple[bool, str]:
     # Check if any file path starts with "images/" and is not just the folder itself.
     has_images = any(f.startswith("images/") and f != "images/" for f in filenames)
     if not has_images:
-        return False, "Error: The 'images' folder is missing or empty."
+        return False, "Error: The 'images' folder is missing or is empty."
 
     return True, "Validation successful."
